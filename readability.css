@@ -154,10 +154,10 @@ body{font-size:16px;line-height:1.7}
 }
 
 @media(min-width:1001px){
-  .main-layout{width:calc(100% - 3rem);max-width:1400px;margin:64px auto 0}
-  .header-container{max-width:1400px;margin:0 auto;padding-inline:2rem}
+  .main-layout{width:calc(100% - 3rem);max-width:1920px;margin:64px auto 0}
+  .header-container{max-width:1920px;margin:0 auto;padding-inline:2rem}
   .right-content{padding-right:3rem}
-  .content-inner{margin-left:auto;margin-right:auto}
+  .content-inner{width:100%;max-width:1200px;margin-left:auto;margin-right:auto}
 }
 
 .profile-pic{border:0!important;border-radius:0!important;outline:0!important;box-shadow:none!important;background:transparent;mix-blend-mode:multiply}
