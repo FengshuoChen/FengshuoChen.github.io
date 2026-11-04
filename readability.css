@@ -142,7 +142,7 @@ body{font-size:16px;line-height:1.7}
 
 @media(min-width:1001px){
   .main-layout{margin-top:64px}
-  .left-hero{top:75px;transform:none;max-height:calc(100vh - 75px);overflow-y:auto}
+  .left-hero{top:104px;padding-top:0;transform:none;max-height:calc(100vh - 104px);overflow-y:auto}
 }
 
 .profile-pic{border:0!important;border-radius:0!important;outline:0!important;box-shadow:none!important;background:transparent;mix-blend-mode:multiply}
