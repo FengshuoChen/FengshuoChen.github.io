@@ -139,3 +139,8 @@ body{font-size:16px;line-height:1.7}
   .award-item{grid-template-columns:14px 34px minmax(0,1fr);font-size:10px}
   .page-footer{font-size:9px}
 }
+
+@media(min-width:1001px) and (min-height:900px){
+  .main-layout{margin-top:64px}
+  .left-hero{top:75px;transform:none}
+}
