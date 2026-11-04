@@ -141,8 +141,14 @@ body{font-size:16px;line-height:1.7}
 }
 
 @media(min-width:1001px){
-  .main-layout{margin-top:64px}
-  .left-hero{top:104px;padding-top:0;transform:none;max-height:calc(100vh - 104px);overflow-y:auto}
+  .main-layout{margin-top:64px;align-items:flex-start}
+  .left-hero{position:relative;top:auto;left:auto;transform:none;flex:0 0 350px;width:350px;padding:40px 20px 25px 4rem;max-height:none;overflow:visible}
+  .right-content{margin-left:0;padding-left:3rem}
+}
+
+@media(max-width:1250px) and (min-width:1001px){
+  .left-hero{flex-basis:290px;width:290px;padding:40px 16px 25px}
+  .right-content{padding-left:3rem;padding-right:3rem}
 }
 
 .profile-pic{border:0!important;border-radius:0!important;outline:0!important;box-shadow:none!important;background:transparent;mix-blend-mode:multiply}
