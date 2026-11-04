@@ -1,0 +1,129 @@
+/* Typography and spacing scale tuned for comfortable reading. */
+body{font-size:16px;line-height:1.7}
+.header-wrapper{height:64px}
+.header-container{padding-inline:7rem}
+.name-main{font-size:19px}
+.header-nav{gap:1.7rem}
+.nav-item{font-size:14px}
+.right-content{padding-top:36px}
+.content-inner{max-width:1000px}
+.section-block{margin-bottom:27px}
+.intro-text{font-size:16px;line-height:1.85}
+.callout{font-size:14px;padding:13px 17px;margin-top:16px}
+.card-title{font-size:23px;margin-bottom:12px}
+.news-list{padding:8px 13px;max-height:12em}
+.news-list li{grid-template-columns:68px minmax(0,1fr);font-size:13px;line-height:1.75;padding:6px 0}
+.news-time{font-size:12px}
+.publications-select{gap:15px}
+.tag-select-filter{font-size:12px;height:26px}
+.publications-info-small{font-size:11px}
+.publication-card{gap:22px;padding:16px 0}
+.publication-image{width:220px;height:150px;flex-basis:220px}
+.publication-content{min-height:150px}
+.publication-title{font-size:15px;line-height:1.55}
+.publication-title-zh{font-size:12px}
+.publication-authors{font-size:11px}
+.publication-abstract{font-size:12px;line-height:1.75;margin:7px 0}
+.tag-item-show{font-size:10px;padding:2px 8px}
+.timeline-container{margin-top:15px}
+.timeline-item{margin-bottom:13px}
+.timeline-content{padding:13px 16px}
+.timeline-label{font-size:8px}
+.exp-type{font-size:10px;padding:2px 9px}
+.exp-period{font-size:11px}
+.exp-title{font-size:13px;margin:7px 0 2px}
+.exp-subtitle{font-size:11px}
+.exp-details{font-size:11px;line-height:1.75;margin-top:7px}
+.education-item{padding:13px 15px}
+.education-university{font-size:13px}
+.education-period{font-size:11px}
+.education-period span{font-size:10px}
+.education-details,.education-details p{font-size:11px}
+.education-courses{font-size:10px}
+.award-item{font-size:12px;grid-template-columns:18px 45px minmax(0,1fr);margin:7px 0}
+.award-year{font-size:11px}
+.more{font-size:13px}
+.page-footer{font-size:11px;padding-top:15px}
+.page-footer a{font-size:11px}
+.meta-name{font-size:27px}
+.meta-subname{font-size:15px}
+.meta-affiliation{font-size:13px}
+.meta-description{font-size:12px;line-height:1.9}
+.meta-linkitem{font-size:12px;padding:7px 12px}
+.contact-small{font-size:13px}
+.small-text{font-size:10px}
+
+@media(max-width:1250px) and (min-width:1001px){
+  .header-container{padding-inline:3rem}
+  .right-content{padding-inline:5rem}
+}
+
+@media(max-width:1000px){
+  html{scroll-padding-top:70px}
+  .header-wrapper{height:64px}
+  .header-container{padding:0 18px}
+  .header-nav{top:64px}
+  .nav-item{font-size:14px}
+  .main-layout{margin-top:64px}
+  .left-hero{padding:27px 20px 22px}
+  .right-content{padding:24px 24px 32px}
+  .content-inner{max-width:760px}
+  .hero-card{max-width:680px}
+  .meta-name{font-size:23px}
+  .meta-subname{font-size:13px}
+  .meta-affiliation{font-size:12px}
+  .meta-description{font-size:11px}
+  .meta-linkitem{font-size:10px}
+  .contact-small{font-size:12px}
+  .small-text{font-size:9px}
+  .section-block{margin-bottom:24px}
+  .publication-card{gap:16px}
+  .publication-image{width:190px;height:135px;flex-basis:190px}
+  .publication-content{min-height:135px}
+  .publication-title{font-size:13px}
+  .publication-abstract{font-size:11px}
+  .news-list li{font-size:12px}
+  .exp-details{font-size:10px}
+}
+
+@media(max-width:560px){
+  body{font-size:15px}
+  .header-container{padding-inline:13px}
+  .name-main{font-size:16px}
+  .main-layout{margin-top:64px}
+  .hero-card{grid-template-columns:108px minmax(0,1fr);gap:14px}
+  .meta-name{font-size:19px}
+  .meta-subname{font-size:12px}
+  .meta-affiliation{font-size:10px}
+  .meta-description{font-size:9px;line-height:1.7;margin:6px 0}
+  .meta-linkitem{font-size:8px;padding:5px 7px}
+  .contact-small{font-size:10px;margin-top:7px}
+  .small-text{font-size:8px}
+  .right-content{padding:18px 16px 26px}
+  .section-block{margin-bottom:21px}
+  .card-title{font-size:19px}
+  .intro-text{font-size:13px}
+  .callout{font-size:12px;padding:10px 12px}
+  .news-list{padding:6px 9px}
+  .news-list li{grid-template-columns:47px minmax(0,1fr);font-size:10px;padding:5px 0}
+  .news-time{font-size:10px}
+  .publication-card{gap:10px;padding:12px 0}
+  .publication-image{width:100%;height:145px;flex:0 0 145px}
+  .publication-title{font-size:12px}
+  .publication-title-zh{font-size:10px}
+  .publication-authors{font-size:10px}
+  .publication-abstract{font-size:10px}
+  .tag-item-show{font-size:8px}
+  .timeline-container{padding-left:30px}
+  .timeline-container:before{left:28px}
+  .timeline-label{left:-32px;width:27px;font-size:6px}
+  .timeline-content{padding:10px}
+  .exp-title{font-size:11px}
+  .exp-details{font-size:9px}
+  .education-item{padding:10px}
+  .education-university{font-size:11px}
+  .education-period{font-size:9px}
+  .education-details,.education-details p{font-size:10px}
+  .award-item{grid-template-columns:14px 34px minmax(0,1fr);font-size:10px}
+  .page-footer{font-size:9px}
+}
