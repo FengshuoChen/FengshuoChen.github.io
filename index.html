@@ -3,85 +3,175 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f4ef">
-  <meta name="description" content="陈烽硕的个人学术主页，关注多模态学习、显著性目标检测与图像分割。">
-  <title>陈烽硕 · 多模态视觉研究</title>
+  <meta name="theme-color" content="#fff6f8">
+  <meta name="description" content="陈烽硕的学术个人主页，关注多模态学习、显著性目标检测与小样本语义分割。">
+  <title>陈烽硕 | Research</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sigmar+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="wordmark" href="#home" aria-label="回到首页"><span class="mark">F</span><span>FENGSHUO CHEN</span></a>
-    <button class="menu-toggle" aria-label="打开导航" aria-expanded="false">☰</button>
-    <nav class="topnav" aria-label="主导航">
-      <a href="#about">关于</a><a href="#research">研究</a><a href="#publications">论文</a><a href="#experience">经历</a><a href="#contact">联系</a>
-      <button class="lang-toggle" type="button" aria-label="切换语言">EN <span>↗</span></button>
-    </nav>
+  <header class="header-wrapper">
+    <div class="header-container">
+      <a class="header-name" href="#about"><span class="brand-mark">陈</span><span class="name-main">Fengshuo Chen</span></a>
+      <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+      <nav class="header-nav" aria-label="Section navigation">
+        <a class="nav-item" href="#about">About</a>
+        <a class="nav-item" href="#news">News</a>
+        <a class="nav-item" href="#publications">Publications</a>
+        <a class="nav-item" href="#research">Research</a>
+        <a class="nav-item" href="#education">Education</a>
+        <a class="nav-item" href="#awards">Awards</a>
+        <a class="nav-item" href="#more">More</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="home">
-    <section class="hero wrap">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span><span data-zh="个人主页 · 2026" data-en="PERSONAL WEBSITE · 2026">个人主页 · 2026</span></div>
-        <h1><span data-zh="陈烽硕" data-en="Fengshuo">陈烽硕</span><span class="latin" data-zh="Fengshuo Chen" data-en="Chen">Fengshuo Chen</span></h1>
-        <p class="hero-lede" data-zh="探索多模态视觉理解，让机器在复杂场景中看得更准、学得更轻。" data-en="Exploring multimodal visual understanding — helping machines see more clearly and learn more efficiently in complex scenes.">探索多模态视觉理解，让机器在复杂场景中看得更准、学得更轻。</p>
-        <div class="hero-tags"><span>Multimodal Learning</span><span>Visual Saliency</span><span>Image Segmentation</span></div>
-        <div class="hero-actions"><a class="button button-dark" href="#publications" data-zh="查看研究成果" data-en="Explore my work">查看研究成果 <span>↓</span></a><a class="text-link" href="mailto:chen_fengshuo@163.com">联系我 <span>↗</span></a></div>
+  <main class="main-layout">
+    <aside class="left-hero">
+      <div class="hero-card">
+        <div class="profile-pic" aria-label="陈烽硕的姓名字标">
+          <span class="profile-seal">陈</span>
+          <span class="profile-caption">FENGSHUO<br>CHEN</span>
+          <span class="profile-spark">✦</span>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-name">陈烽硕</div>
+          <div class="meta-subname">Fengshuo Chen</div>
+          <div class="meta-affiliation">AI Student @ HDU<br>Incoming M.Eng. @ Fudan</div>
+          <div class="meta-description">
+            <div>🤖 Multimodal Vision Researcher</div>
+            <div>🎯 Salient Object Detection</div>
+            <div>🧩 Few-Shot Segmentation</div>
+          </div>
+          <div class="meta-link">
+            <a class="meta-linkitem" href="#publications">Publications</a>
+            <a class="meta-linkitem" href="#research">Research Projects</a>
+          </div>
+          <div class="contact-small">
+            <a href="mailto:chen_fengshuo@163.com" aria-label="Email">Email</a>
+            <a href="https://github.com/FengshuoChen" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <div class="small-text">Last Updated Date: 2026/11/04</div>
+        </div>
       </div>
-      <div class="hero-art" aria-label="多模态视觉抽象图形" role="img">
-        <div class="art-label">MULTI-MODAL<br>PERCEPTION</div>
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
-        <div class="core"><span>看见<br>联系</span></div>
-        <span class="node node-one">RGB</span><span class="node node-two">T</span><span class="node node-three">D</span>
-        <div class="art-coordinate">30°18' N&nbsp; 120°09' E</div>
+    </aside>
+
+    <div class="right-content">
+      <div class="content-inner">
+        <section class="about section-block" id="about">
+          <div class="intro-text">
+            Hi, I'm <strong>Fengshuo Chen</strong> (陈烽硕), an undergraduate student in <strong>Artificial Intelligence</strong> at <a href="https://www.hdu.edu.cn/" target="_blank" rel="noreferrer">Hangzhou Dianzi University</a>, admitted to the Master's program in Electronic Information at <a href="https://www.fudan.edu.cn/" target="_blank" rel="noreferrer">Fudan University</a>.
+            <br><br>
+            My research focuses on <strong>multimodal visual understanding</strong>, especially salient object detection and few-shot semantic segmentation. I explore how modality quality, language semantics, and efficient architectures can improve vision models in complex imaging scenarios.
+            <div class="callout"><strong>Research interests</strong><br>Multimodal Learning · Salient Object Detection · Few-Shot Segmentation</div>
+          </div>
+        </section>
+
+        <section class="section-block" id="news">
+          <div class="card-title">News</div>
+          <ul class="news-list">
+            <li><div class="news-time">2026</div><div class="news-content">My first-authored paper <a href="#paper-tigrnet" class="news-ref">TIGRNet</a> was published in <em>IEEE Signal Processing Letters</em>.</div></li>
+            <li><div class="news-time">2026</div><div class="news-content"><a href="#paper-qmsam" class="news-ref">QM-SAM</a>, submitted to <em>IEEE Transactions on Image Processing</em>, is under major revision.</div></li>
+            <li><div class="news-time">2024</div><div class="news-content">Our Mamba-based lightweight multimodal saliency project received First Prize at the Dahua Cup Technical Innovation Competition.</div></li>
+          </ul>
+        </section>
+
+        <section class="section-block" id="publications">
+          <div class="publications-select">
+            <div class="card-title">Publications</div>
+            <select class="tag-select-filter" id="paper-filter" aria-label="Filter publications">
+              <option value="all">All</option>
+              <option value="published">Published</option>
+              <option value="revision">Under Revision</option>
+            </select>
+          </div>
+          <div class="publications-info"><div class="publications-info-small">Publication status and reported results are summarized from my CV.</div></div>
+          <div class="publications-list">
+            <article class="publication-card" id="paper-tigrnet" data-status="published">
+              <div class="publication-image thumb-tigr" aria-hidden="true"><span class="modality rgb">RGB</span><span class="modality thermal">T</span><span class="modality depth">D</span><span class="thumb-arrow">→</span><span class="mask-shape"></span><small>TEXT-GUIDED RETRIEVAL</small></div>
+              <div class="publication-content">
+                <div class="publication-venue"><span class="venue-tag journal">IEEE SPL</span><span class="venue-tag published">Published</span></div>
+                <h3 class="publication-title">Text-Image Guided Retrieval Network for Triple-Modal Images Few-Shot Semantic Segmentation</h3>
+                <div class="publication-title-zh">面向三模态图像的小样本语义分割文本-图像引导检索网络</div>
+                <div class="publication-authors"><strong>Fengshuo Chen</strong> · First author</div>
+                <p class="publication-abstract">TIGRNet introduces text-guided modality fusion and a staged text-image retrieval strategy for few-shot segmentation. On VDT-2048-5i, it improves mean mIoU by 8.8% and mean FB-IoU by 3.8% over the best competing method.</p>
+                <div class="publication-tags"><span class="tag-item-show">Text-Guided</span><span class="tag-item-show">Multimodal Segmentation</span><span class="tag-item-show">2025.07 — 2026.05</span></div>
+              </div>
+            </article>
+            <article class="publication-card" id="paper-qmsam" data-status="revision">
+              <div class="publication-image thumb-qmsam" aria-hidden="true"><span class="quality quality-a">Q1</span><span class="quality quality-b">Q2</span><span class="quality quality-c">Q3</span><span class="thumb-arrow">→</span><span class="sam-box">SAM</span><small>QUALITY-GUIDED FUSION</small></div>
+              <div class="publication-content">
+                <div class="publication-venue"><span class="venue-tag journal">IEEE TIP</span><span class="venue-tag revision">Major Revision</span></div>
+                <h3 class="publication-title">QM-SAM: Quality-Guided and Modality-Adapted Segment Anything Model for Arbitrary Modality Salient Object Detection</h3>
+                <div class="publication-title-zh">质量引导与模态自适应的 Segment Anything 任意模态显著性目标检测</div>
+                <div class="publication-authors"><strong>Fengshuo Chen</strong> · Second author</div>
+                <p class="publication-abstract">A saliency-aware quality assessment and adaptive multimodal fusion framework guides modality weighting and adapts fused features to SAM. On AM-XD, it reduces mean MAE by 44.9% and improves F-measure by 8.7% over the best competing method.</p>
+                <div class="publication-tags"><span class="tag-item-show">Salient Object Detection</span><span class="tag-item-show">Quality-Guided Fusion</span><span class="tag-item-show">2024.11 — 2026.02</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="research">
+          <div class="publications-select"><div class="card-title">Research Projects</div><span class="section-hint">Selected</span></div>
+          <div class="timeline-container">
+            <article class="timeline-item">
+              <div class="timeline-label">PROJECT</div>
+              <div class="timeline-content">
+                <div class="exp-container">
+                  <div class="timeline-header"><span class="exp-type project">Project</span><span class="exp-period">2024.06 — 2024.09</span></div>
+                  <h3 class="exp-title">Mamba-Based Lightweight Multimodal Salient Object Detection</h3>
+                  <div class="exp-subtitle">基于 Mamba 的轻量级多模态显著性目标检测网络</div>
+                  <ul class="exp-details"><li>Built on LightM-Unet, using Mamba encoders for feature extraction and Mamba blocks for multimodal fusion.</li><li>Model size is approximately 1 MB; on VDT-2048, performance is comparable to MFDF-Net with over 40× fewer parameters.</li><li><strong>First Prize</strong>, Dahua Cup Technical Innovation Competition · Core team member.</li></ul>
+                </div>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-label">RESEARCH</div>
+              <div class="timeline-content">
+                <div class="exp-container">
+                  <div class="timeline-header"><span class="exp-type research">Research</span><span class="exp-period">2025.07 — 2026.05</span></div>
+                  <h3 class="exp-title">Text-Image Guided Retrieval Network (TIGRNet)</h3>
+                  <ul class="exp-details"><li>Independently proposed the core idea, implemented the model, and completed comparison and ablation experiments.</li><li>Introduced text priors for cross-modal fusion and target retrieval in triple-modal few-shot segmentation.</li></ul>
+                </div>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-label">RESEARCH</div>
+              <div class="timeline-content">
+                <div class="exp-container">
+                  <div class="timeline-header"><span class="exp-type research">Research</span><span class="exp-period">2024.11 — 2026.02</span></div>
+                  <h3 class="exp-title">Quality-Guided and Modality-Adapted SAM (QM-SAM)</h3>
+                  <ul class="exp-details"><li>Designed the core method, implemented the model, and completed experiments including 14 SOTA comparisons and ablations.</li><li>Developed quality-aware modality fusion and adapter-based feature injection into SAM.</li></ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="education">
+          <div class="card-title">Education</div>
+          <div class="education-list">
+            <article class="education-item"><div class="education-header"><h3 class="education-university">Fudan University</h3><div class="education-period">2027.09 — 2030.06<span>Shanghai, China</span></div></div><div class="education-details"><p>Master of Electronic Information · Admitted via recommendation</p></div></article>
+            <article class="education-item"><div class="education-header"><h3 class="education-university">Hangzhou Dianzi University</h3><div class="education-period">2023.09 — 2027.06<span>Hangzhou, China</span></div></div><div class="education-details"><p>Bachelor of Artificial Intelligence · GPA 4.56 / 5.0 · Rank 2 / 66</p><div class="education-courses"><span>Selected:</span><ul><li>CET-6 562</li></ul></div></div></article>
+          </div>
+        </section>
+
+        <section class="section-block" id="awards">
+          <div class="card-title">Selected Awards</div>
+          <div class="awards-list"><div class="award-item"><span class="award-icon">✦</span><span class="award-year">2024</span><span class="award-text">Dahua Cup Technical Innovation Competition <strong>(First Prize · Core team member)</strong></span></div></div>
+        </section>
+
+        <section class="section-block more-section" id="more">
+          <div class="card-title">Something more...</div>
+          <p class="more">I work with PyTorch and have studied and reproduced models including Swin Transformer, CLIP, and Segment Anything. I also enjoy writing research papers in English and using LaTeX.</p>
+        </section>
+        <footer class="page-footer"><span>Fengshuo Chen · 2026</span><a href="mailto:chen_fengshuo@163.com">Get in touch ↗</a></footer>
       </div>
-    </section>
-
-    <section class="intro wrap" id="about">
-      <div class="section-kicker"><span>01</span><span data-zh="关于我" data-en="ABOUT">关于我</span></div>
-      <div class="intro-content">
-        <h2 data-zh="你好，我是陈烽硕。" data-en="Hi, I'm Fengshuo Chen.">你好，我是陈烽硕。</h2>
-        <p data-zh="目前就读于杭州电子科技大学人工智能专业，将于 2027 年赴复旦大学攻读电子信息硕士学位。我关注多模态视觉学习，尤其是显著性目标检测、小样本语义分割，以及如何让语言信息帮助视觉模型更好地理解目标与场景。" data-en="I am an undergraduate student in Artificial Intelligence at Hangzhou Dianzi University, and will pursue a Master's degree in Electronic Information at Fudan University from 2027. My interests include multimodal visual learning, salient object detection, few-shot segmentation, and using language to help vision models understand objects and scenes.">目前就读于杭州电子科技大学人工智能专业，将于 2027 年赴复旦大学攻读电子信息硕士学位。我关注多模态视觉学习，尤其是显著性目标检测、小样本语义分割，以及如何让语言信息帮助视觉模型更好地理解目标与场景。</p>
-        <div class="stats"><div><strong>2</strong><span data-zh="研究论文" data-en="Research papers">研究论文</span></div><div><strong>1 MB</strong><span data-zh="轻量模型" data-en="Lightweight model">轻量模型</span></div><div><strong>2 / 66</strong><span data-zh="本科专业排名" data-en="Undergraduate rank">本科专业排名</span></div></div>
-      </div>
-    </section>
-
-    <section class="research wrap" id="research">
-      <div class="section-kicker"><span>02</span><span data-zh="研究方向" data-en="RESEARCH">研究方向</span></div>
-      <div class="research-grid">
-        <article class="research-card"><div class="card-index">A / 01</div><div class="mini-art mini-a"><i></i><i></i><i></i><b>RGB</b><b>T</b><b>D</b></div><h3 data-zh="多模态显著性检测" data-en="Multimodal Saliency">多模态显著性检测</h3><p data-zh="融合 RGB、热红外与深度等互补线索，在复杂环境中定位真正重要的目标。" data-en="Combining complementary RGB, thermal and depth cues to locate salient objects in challenging scenes.">融合 RGB、热红外与深度等互补线索，在复杂环境中定位真正重要的目标。</p></article>
-        <article class="research-card"><div class="card-index">A / 02</div><div class="mini-art mini-b"><span>TEXT</span><em>↘</em><span>IMAGE</span><em>↗</em><b>FUSE</b></div><h3 data-zh="文本引导视觉理解" data-en="Text-Guided Vision">文本引导视觉理解</h3><p data-zh="将文本语义作为先验，引导跨模态特征融合与目标检索，提升模型的泛化能力。" data-en="Using textual semantics as priors for cross-modal fusion and target retrieval, improving generalization.">将文本语义作为先验，引导跨模态特征融合与目标检索，提升模型的泛化能力。</p></article>
-        <article class="research-card"><div class="card-index">A / 03</div><div class="mini-art mini-c"><span class="mamba-shape">M</span><span class="light-line"></span><b>LIGHTWEIGHT</b></div><h3 data-zh="高效视觉模型" data-en="Efficient Vision Models">高效视觉模型</h3><p data-zh="探索 Mamba 等结构在多模态视觉任务中的应用，在保持性能的同时控制参数量与计算成本。" data-en="Exploring Mamba-based architectures for multimodal vision while keeping parameter counts and compute efficient.">探索 Mamba 等结构在多模态视觉任务中的应用，在保持性能的同时控制参数量与计算成本。</p></article>
-      </div>
-    </section>
-
-    <section class="publications wrap" id="publications">
-      <div class="section-heading"><div class="section-kicker"><span>03</span><span data-zh="精选论文" data-en="PUBLICATIONS">精选论文</span></div><span class="heading-note">SELECTED RESEARCH · 2025—2026</span></div>
-      <article class="paper paper-featured">
-        <div class="paper-meta"><span class="paper-number">01</span><span class="paper-status status-published">PUBLISHED</span><span class="paper-year">2026</span></div>
-        <div class="paper-main"><h3>Text-Image Guided Retrieval Network for Triple-Modal Images Few-Shot Semantic Segmentation</h3><p class="paper-zh" data-zh="面向三模态图像的小样本语义分割文本-图像引导检索网络" data-en="Few-shot semantic segmentation for triple-modal images">面向三模态图像的小样本语义分割文本-图像引导检索网络</p><p class="paper-desc" data-zh="提出 TIGRNet，将文本信息引入多模态小样本分割，通过文本引导的模态融合与分阶段目标检索，增强跨模态理解。在 VDT-2048-5i 数据集上，平均 mIoU 提升 8.8%，平均 FB-IoU 提升 3.8%。" data-en="TIGRNet introduces textual information into multimodal few-shot segmentation. Text-guided modality fusion and staged target retrieval improve cross-modal understanding. On VDT-2048-5i, it improves mean mIoU by 8.8% and mean FB-IoU by 3.8% over the best competing method.">提出 TIGRNet，将文本信息引入多模态小样本分割，通过文本引导的模态融合与分阶段目标检索，增强跨模态理解。在 VDT-2048-5i 数据集上，平均 mIoU 提升 8.8%，平均 FB-IoU 提升 3.8%。</p><div class="paper-footer"><span>IEEE Signal Processing Letters</span><span>第一作者</span><span>2025.07 — 2026.05</span></div></div>
-      </article>
-      <article class="paper">
-        <div class="paper-meta"><span class="paper-number">02</span><span class="paper-status status-review">MAJOR REVISION</span><span class="paper-year">2026</span></div>
-        <div class="paper-main"><h3>QM-SAM: Quality-Guided and Modality-Adapted Segment Anything Model for Arbitrary Modality Salient Object Detection</h3><p class="paper-zh" data-zh="质量引导与模态自适应的 Segment Anything 任意模态显著性目标检测模型" data-en="Quality-guided arbitrary-modality salient object detection">质量引导与模态自适应的 Segment Anything 任意模态显著性目标检测模型</p><p class="paper-desc" data-zh="构建显著性感知质量评估与多模态自适应融合框架，以质量信号调节不同模态贡献，并将融合特征适配至 SAM。在 AM-XD 上，相较最优对比方法，平均 MAE 降低 44.9%，F-measure 提升 8.7%。" data-en="A saliency-aware quality assessment and adaptive multimodal fusion framework uses quality signals to balance modality contributions and adapts fused features to SAM. On AM-XD, it reduces mean MAE by 44.9% and improves F-measure by 8.7% over the best competing method.">构建显著性感知质量评估与多模态自适应融合框架，以质量信号调节不同模态贡献，并将融合特征适配至 SAM。在 AM-XD 上，相较最优对比方法，平均 MAE 降低 44.9%，F-measure 提升 8.7%。</p><div class="paper-footer"><span>IEEE Transactions on Image Processing</span><span>第二作者</span><span>2024.11 — 2026.02</span></div></div>
-      </article>
-      <p class="paper-note" data-zh="论文状态与实验结果依据个人简历整理。" data-en="Publication status and results are summarized from my CV.">论文状态与实验结果依据个人简历整理。</p>
-    </section>
-
-    <section class="experience wrap" id="experience">
-      <div class="section-kicker"><span>04</span><span data-zh="项目与教育" data-en="EXPERIENCE">项目与教育</span></div>
-      <div class="timeline">
-        <article class="timeline-item"><div class="timeline-date">2024.06 — 2024.09</div><div class="timeline-body"><span class="timeline-label">RESEARCH PROJECT</span><h3 data-zh="基于 Mamba 的轻量级多模态显著性检测网络" data-en="A Mamba-Based Lightweight Multimodal Saliency Network">基于 Mamba 的轻量级多模态显著性检测网络</h3><p data-zh="基于 LightM-Unet 构建跨模态融合模型，模型大小约 1 MB，在 VDT-2048 上达到与 MFDF-Net 相当的性能，参数量降低 40 余倍。" data-en="Built on LightM-Unet, the model fuses cross-modal features at about 1 MB and achieves performance comparable to MFDF-Net on VDT-2048 with over 40× fewer parameters.">基于 LightM-Unet 构建跨模态融合模型，模型大小约 1 MB，在 VDT-2048 上达到与 MFDF-Net 相当的性能，参数量降低 40 余倍。</p><span class="award">✦ “大华杯”技术创新大赛一等奖 · 核心成员</span></div></article>
-        <article class="timeline-item"><div class="timeline-date">2027.09 — 2030.06</div><div class="timeline-body"><span class="timeline-label">EDUCATION · INCOMING</span><h3>复旦大学</h3><p data-zh="电子信息 · 硕士（推免）" data-en="M.Eng. in Electronic Information · admitted via recommendation">电子信息 · 硕士（推免）</p></div></article>
-        <article class="timeline-item"><div class="timeline-date">2023.09 — 2027.06</div><div class="timeline-body"><span class="timeline-label">EDUCATION · CURRENT</span><h3>杭州电子科技大学</h3><p data-zh="人工智能 · 本科 · GPA 4.56/5.0 · 专业排名 2/66" data-en="B.Eng. in Artificial Intelligence · GPA 4.56/5.0 · Rank 2/66">人工智能 · 本科 · GPA 4.56/5.0 · 专业排名 2/66</p></div></article>
-      </div>
-    </section>
-
-    <section class="contact wrap" id="contact"><div><div class="section-kicker"><span>05</span><span data-zh="保持联系" data-en="SAY HELLO">保持联系</span></div><h2 data-zh="一起探索更好的视觉理解。" data-en="Let's explore better visual understanding.">一起探索更好的视觉理解。</h2><p data-zh="欢迎交流多模态学习、显著性检测与视觉分割相关的研究想法。" data-en="Open to conversations about multimodal learning, salient object detection, and visual segmentation.">欢迎交流多模态学习、显著性检测与视觉分割相关的研究想法。</p></div><a class="contact-link" href="mailto:chen_fengshuo@163.com">chen_fengshuo@163.com <span>↗</span></a></section>
+    </div>
   </main>
-  <footer class="footer wrap"><a class="wordmark" href="#home"><span class="mark">F</span><span>FENGSHUO CHEN</span></a><span>© 2026 Fengshuo Chen · Built with curiosity.</span><a href="https://github.com/FengshuoChen" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
   <script src="script.js"></script>
 </body>
 </html>

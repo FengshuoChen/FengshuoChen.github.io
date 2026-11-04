@@ -1,6 +1,8 @@
 # 陈烽硕 · 个人学术主页
 
-纯静态 HTML/CSS/JavaScript 网站，无需安装依赖。
+纯静态 HTML/CSS/JavaScript 网站，无需安装依赖。页面结构参考 Long Ling 的个人学术主页和其公开源码仓库：<https://github.com/LucyLing24/longling>。
+
+页面包含固定顶栏、桌面端侧边个人栏、论文筛选、研究项目时间线及教育/奖项信息；窄屏下切换为移动布局。
 
 ## 本地预览
 
@@ -22,5 +24,5 @@ python -m http.server 8000
 
 - 主要文案和栏目位于 `index.html`。
 - 视觉样式位于 `styles.css`。
-- 中英切换和移动导航位于 `script.js`。
+- 论文筛选和移动导航位于 `script.js`。
 - 简历中的手机号未放入网页；论文链接尚未提供，因此当前使用文字呈现论文信息。
