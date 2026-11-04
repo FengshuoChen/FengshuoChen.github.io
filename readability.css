@@ -144,3 +144,5 @@ body{font-size:16px;line-height:1.7}
   .main-layout{margin-top:64px}
   .left-hero{top:75px;transform:none}
 }
+
+.profile-pic{border:0;border-radius:0;background:transparent;mix-blend-mode:multiply}
