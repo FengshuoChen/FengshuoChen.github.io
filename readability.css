@@ -161,6 +161,8 @@ body{font-size:16px;line-height:1.7}
   .right-content{flex:1;margin-left:320px;width:auto;padding:2rem 8rem 2rem 10rem;min-width:0}
   .content-inner{width:100%;max-width:none;margin:0}
   .meta-linkitem{width:min(100%,320px)}
+  .avatar-crop{position:relative;width:100%;height:330px;overflow:hidden;flex:none}
+  .profile-pic{position:absolute;top:-13%;left:-20%;width:140%;max-width:none;height:auto!important}
 }
 
 .profile-pic{height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;border:0!important;border-radius:0!important;outline:0!important;box-shadow:none!important;background:transparent;mix-blend-mode:multiply}
