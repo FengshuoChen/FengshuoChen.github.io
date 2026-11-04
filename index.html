@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sigmar+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="readability.css?v=longling-layout-4">
+  <link rel="stylesheet" href="readability.css?v=profile-content-1">
 </head>
 <body>
   <header class="header-wrapper">
@@ -24,7 +24,7 @@
         <a class="nav-item" href="#research">Research</a>
         <a class="nav-item" href="#education">Education</a>
         <a class="nav-item" href="#awards">Awards</a>
-        <a class="nav-item" href="#more">More</a>
+        <a class="nav-item" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -35,7 +35,7 @@
         <div class="avatar-crop"><img class="profile-pic" src="assets/avatar.png" alt="黄色小猫玩偶头像"></div>
         <div class="hero-meta">
           <div class="meta-name-row"><div class="meta-name">陈烽硕</div><div class="meta-subname">Fengshuo Chen</div></div>
-          <div class="meta-affiliation">AI Student @ HDU<br>Incoming M.Eng. @ Fudan</div>
+          <div class="meta-affiliation">Incoming M.Eng. @ Fudan</div>
           <div class="meta-description">
             <div>🤖 Multimodal Vision Researcher</div>
             <div>🎯 Salient Object Detection</div>
@@ -61,7 +61,7 @@
             Hi, I'm <strong>Fengshuo Chen</strong> (陈烽硕), an undergraduate student in <strong>Artificial Intelligence</strong> at <a href="https://www.hdu.edu.cn/" target="_blank" rel="noreferrer">Hangzhou Dianzi University</a>, admitted to the Master's program in Electronic Information at <a href="https://www.fudan.edu.cn/" target="_blank" rel="noreferrer">Fudan University</a>.
             <br><br>
             My research focuses on <strong>multimodal visual understanding</strong>, especially salient object detection and few-shot semantic segmentation. I explore how modality quality, language semantics, and efficient architectures can improve vision models in complex imaging scenarios.
-            <div class="callout"><strong>Research interests</strong><br>Multimodal Learning · Salient Object Detection · Few-Shot Segmentation</div>
+            <div class="callout"><strong>Open to collaborations</strong><br>I’m always open to research collaborations and coffee chats. Please feel free to reach out about potential opportunities. I’m still exploring the research and career paths I’d like to pursue, so I’d be glad to hear your perspective. :)</div>
           </div>
         </section>
 
@@ -85,8 +85,8 @@
           </div>
           <div class="publications-info"><div class="publications-info-small">Publication status and reported results are summarized from my CV.</div></div>
           <div class="publications-list">
-            <article class="publication-card" id="paper-tigrnet" data-status="published">
-              <div class="publication-image thumb-tigr" aria-hidden="true"><span class="modality rgb">RGB</span><span class="modality thermal">T</span><span class="modality depth">D</span><span class="thumb-arrow">→</span><span class="mask-shape"></span><small>TEXT-GUIDED RETRIEVAL</small></div>
+              <article class="publication-card" id="paper-tigrnet" data-status="published">
+              <img class="publication-image publication-figure" src="assets/tigrnet-architecture.png" alt="TIGRNet text-guided retrieval network architecture">
               <div class="publication-content">
                 <div class="publication-venue"><span class="venue-tag journal">IEEE SPL</span><span class="venue-tag published">Published</span></div>
                 <h3 class="publication-title">Text-Image Guided Retrieval Network for Triple-Modal Images Few-Shot Semantic Segmentation</h3>
@@ -114,17 +114,6 @@
           <div class="publications-select"><div class="card-title">Research Projects</div><span class="section-hint">Selected</span></div>
           <div class="timeline-container">
             <article class="timeline-item">
-              <div class="timeline-label">PROJECT</div>
-              <div class="timeline-content">
-                <div class="exp-container">
-                  <div class="timeline-header"><span class="exp-type project">Project</span><span class="exp-period">2024.06 — 2024.09</span></div>
-                  <h3 class="exp-title">Mamba-Based Lightweight Multimodal Salient Object Detection</h3>
-                  <div class="exp-subtitle">基于 Mamba 的轻量级多模态显著性目标检测网络</div>
-                  <ul class="exp-details"><li>Built on LightM-Unet, using Mamba encoders for feature extraction and Mamba blocks for multimodal fusion.</li><li>Model size is approximately 1 MB; on VDT-2048, performance is comparable to MFDF-Net with over 40× fewer parameters.</li><li><strong>First Prize</strong>, Dahua Cup Technical Innovation Competition · Core team member.</li></ul>
-                </div>
-              </div>
-            </article>
-            <article class="timeline-item">
               <div class="timeline-label">RESEARCH</div>
               <div class="timeline-content">
                 <div class="exp-container">
@@ -144,6 +133,17 @@
                 </div>
               </div>
             </article>
+            <article class="timeline-item">
+              <div class="timeline-label">PROJECT</div>
+              <div class="timeline-content">
+                <div class="exp-container">
+                  <div class="timeline-header"><span class="exp-type project">Project</span><span class="exp-period">2024.06 — 2024.09</span></div>
+                  <h3 class="exp-title">Mamba-Based Lightweight Multimodal Salient Object Detection</h3>
+                  <div class="exp-subtitle">基于 Mamba 的轻量级多模态显著性目标检测网络</div>
+                  <ul class="exp-details"><li>Built on LightM-Unet, using Mamba encoders for feature extraction and Mamba blocks for multimodal fusion.</li><li>Model size is approximately 1 MB; on VDT-2048, performance is comparable to MFDF-Net with over 40× fewer parameters.</li><li><strong>First Prize</strong>, Dahua Cup Technical Innovation Competition · Core team member.</li></ul>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
 
@@ -160,11 +160,7 @@
           <div class="awards-list"><div class="award-item"><span class="award-icon">✦</span><span class="award-year">2024</span><span class="award-text">Dahua Cup Technical Innovation Competition <strong>(First Prize · Core team member)</strong></span></div></div>
         </section>
 
-        <section class="section-block more-section" id="more">
-          <div class="card-title">Something more...</div>
-          <p class="more">I work with PyTorch and have studied and reproduced models including Swin Transformer, CLIP, and Segment Anything. I also enjoy writing research papers in English and using LaTeX.</p>
-        </section>
-        <footer class="page-footer"><span>Fengshuo Chen · 2026</span><a href="mailto:chen_fengshuo@163.com">Get in touch ↗</a></footer>
+        <footer class="page-footer" id="contact"><span>Fengshuo Chen · 2026</span><a href="mailto:chen_fengshuo@163.com">Get in touch ↗</a></footer>
       </div>
     </div>
   </main>
