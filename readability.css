@@ -154,12 +154,12 @@ body{font-size:16px;line-height:1.7}
 }
 
 @media(min-width:1001px){
-  body{zoom:.9}
-  .main-layout{width:clamp(850px,83vw,2200px);max-width:calc(100% - 3rem);margin:64px auto 0}
-  .header-container{width:clamp(850px,83vw,2200px);max-width:calc(100% - 3rem);margin:0 auto;padding-inline:2rem}
-  .left-hero{flex:0 0 30%;width:30%;padding:40px 20px 25px 5rem}
-  .right-content{padding-right:3rem}
-  .content-inner{width:100%;max-width:1500px;margin-left:auto;margin-right:auto}
+  .header-wrapper{height:56px}
+  .header-container{width:100%;max-width:none;margin:0;padding:0 8rem}
+  .main-layout{width:100%;max-width:none;margin:56px 0 44px;align-items:stretch}
+  .left-hero{position:fixed;top:50%;left:0;transform:translateY(-50%);flex:0 0 320px;width:320px;padding:2rem 0 2rem 8rem;max-height:none;overflow:visible}
+  .right-content{flex:1;margin-left:320px;width:auto;padding:2rem 8rem 2rem 10rem;min-width:0}
+  .content-inner{width:100%;max-width:none;margin:0}
 }
 
 .profile-pic{height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;border:0!important;border-radius:0!important;outline:0!important;box-shadow:none!important;background:transparent;mix-blend-mode:multiply}
