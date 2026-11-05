@@ -2,6 +2,19 @@ const menuButton = document.querySelector('.hamburger');
 const nav = document.querySelector('.header-nav');
 const header = document.querySelector('.header-wrapper');
 const filter = document.querySelector('#paper-filter');
+const leftHero = document.querySelector('.left-hero');
+
+const setSidebarStickyOffset = () => {
+  if (window.innerWidth > 1000) {
+    const offset = Math.min(0, window.innerHeight - leftHero.offsetHeight);
+    leftHero.style.setProperty('--sidebar-sticky-top', `${offset}px`);
+  } else {
+    leftHero.style.removeProperty('--sidebar-sticky-top');
+  }
+};
+
+setSidebarStickyOffset();
+window.addEventListener('resize', setSidebarStickyOffset);
 
 menuButton.addEventListener('click', () => {
   const open = header.classList.toggle('menu-open');

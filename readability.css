@@ -157,7 +157,7 @@ body{font-size:16px;line-height:1.7}
   .header-wrapper{height:56px}
   .header-container{width:100%;max-width:none;margin:0;padding:0 8rem}
   .main-layout{position:relative;display:grid;grid-template-columns:320px minmax(0,1fr);width:100%;max-width:none;margin:56px 0 44px;align-items:start}
-  .left-hero{position:sticky;top:92px;left:auto;transform:none;align-self:start;width:460px;padding:36px 0 2rem 8rem;max-height:none;overflow:visible}
+  .left-hero{position:sticky;top:var(--sidebar-sticky-top,0px);left:auto;transform:none;align-self:start;width:460px;padding:36px 0 2rem 8rem;max-height:none;overflow:visible}
   .right-content{grid-column:2;flex:1;margin-left:0;width:auto;padding:2rem 8rem 2rem 10rem;min-width:0}
   .content-inner{width:100%;max-width:none;margin:0}
   .meta-linkitem{width:min(100%,320px)}
