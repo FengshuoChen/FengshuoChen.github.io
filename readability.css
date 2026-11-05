@@ -156,9 +156,9 @@ body{font-size:16px;line-height:1.7}
 @media(min-width:1001px){
   .header-wrapper{height:56px}
   .header-container{width:100%;max-width:none;margin:0;padding:0 8rem}
-  .main-layout{position:relative;width:100%;max-width:none;margin:56px 0 44px;align-items:stretch}
-  .left-hero{position:absolute;top:36px;left:0;transform:none;flex:0 0 460px;width:460px;padding:0 0 2rem 8rem;max-height:none;overflow:visible}
-  .right-content{flex:1;margin-left:320px;width:auto;padding:2rem 8rem 2rem 10rem;min-width:0}
+  .main-layout{position:relative;display:grid;grid-template-columns:320px minmax(0,1fr);width:100%;max-width:none;margin:56px 0 44px;align-items:start}
+  .left-hero{position:sticky;top:92px;left:auto;transform:none;align-self:start;width:460px;padding:36px 0 2rem 8rem;max-height:none;overflow:visible}
+  .right-content{grid-column:2;flex:1;margin-left:0;width:auto;padding:2rem 8rem 2rem 10rem;min-width:0}
   .content-inner{width:100%;max-width:none;margin:0}
   .meta-linkitem{width:min(100%,320px)}
   .avatar-crop{position:relative;width:100%;height:330px;overflow:hidden;flex:none}
