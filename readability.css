@@ -172,3 +172,13 @@ body{font-size:16px;line-height:1.7}
 #paper-tigrnet.publication-card{align-items:flex-start;flex-direction:column}
 #paper-tigrnet .publication-figure{display:block;flex:none;width:100%;max-width:1200px;height:auto;object-fit:contain;border:0;border-radius:0;background:transparent}
 #paper-tigrnet .publication-content{width:100%}
+
+/* Match the right-column type scale used by anleeno-academic. */
+@media(min-width:1001px){
+  .right-content{font-size:.9rem;line-height:1.6}
+  .intro-text{font-size:.9rem;line-height:1.6}
+  .card-title{font-size:1.4rem}
+  .news-list li{font-size:.8rem;grid-template-columns:80px minmax(0,1fr);padding:2px 0}
+  .publication-title{font-size:1rem;line-height:1.35}
+  .callout{font-size:1rem;line-height:1.5}
+}
