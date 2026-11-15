@@ -159,7 +159,7 @@ body{font-size:16px;line-height:1.7}
   .main-layout{position:relative;display:grid;grid-template-columns:320px minmax(0,1fr);width:100%;max-width:none;margin:56px 0 44px;align-items:start}
   .left-hero{position:sticky;top:var(--sidebar-sticky-top,0px);left:auto;transform:none;align-self:start;width:460px;padding:36px 0 2rem 8rem;max-height:none;overflow:visible}
   .right-content{grid-column:2;flex:1;margin-left:0;width:auto;padding:2rem 8rem 2rem 10rem;min-width:0}
-  .content-inner{width:100%;max-width:none;margin:0}
+  .content-inner{width:auto;max-width:none;margin:2rem}
   .meta-linkitem{width:min(100%,320px)}
   .avatar-crop{position:relative;width:100%;height:330px;overflow:hidden;flex:none}
   .profile-pic{position:absolute;top:-13%;left:-20%;width:140%;max-width:none;height:auto!important}
